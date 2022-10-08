@@ -490,7 +490,7 @@ select {
     margin: 20px 0;
 }
 
-.modal {
+.container-modal {
     position: fixed;
     background-color: rgb(0 0 0 / 0.92);
     top: 0;
@@ -503,7 +503,7 @@ select {
     flex-direction: column;
 }
 
-.modal .close-modal {
+.container-modal .close-modal {
     position: fixed;
     right: 3rem;
     top: 3rem;
@@ -511,12 +511,12 @@ select {
     height: 3rem;
 }
 
-.modal .close-modal img {
+.container-modal .close-modal img {
     width: 100%;
     cursor: pointer;
 }
 
-.modal .form-modal {
+.container-modal .form-modal {
     max-width: 80rem;
     width: 40rem;
     transition-property: all;
@@ -525,12 +525,12 @@ select {
     opacity: 0;
 }
 
-.modal .form-modal.animate {
+.container-modal .form-modal.animate {
     position: relative;
     opacity: 1;
 }
 
-.modal .form-modal.close {
+.container-modal .form-modal.close {
     opacity: 0;
 }
 

@@ -120,7 +120,7 @@ const Reservation = () => {
             type="button"
             onClick={handleReserve}
           >
-            <div className="btn-fullmenu" to="/menu">
+            <div className="btn-fullmenu">
               Reserva
               <span className="arrow-fullmenu">
                 <FontAwesomeIcon icon={faChevronRight} />

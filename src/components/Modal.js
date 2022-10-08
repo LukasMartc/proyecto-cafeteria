@@ -25,7 +25,6 @@ const Modal = ({setModal, animationModal, setAnimationModal, msj, setMsj, amount
         } catch (error) {
             toast.error('Tu reserva ha fallado')
         }
-
     } 
 
     function handleSubmit(e) {
@@ -67,7 +66,7 @@ const Modal = ({setModal, animationModal, setAnimationModal, msj, setMsj, amount
     }
 
     return (
-        <div className="modal">
+        <div className="container-modal">
             <div className="close-modal">
                 <img
                     src={CerrarBtn}
