@@ -46,8 +46,8 @@ const Reservation = () => {
           <h3 className="title-reservation">RESERVA CON NOSTROS</h3>
           <p className="paragraph-reservation">Reserva tu visita con tiempo. Te confirmaremos tu reserva vía email.</p>
         </div>
-        <form>
-          <div className="select">
+        <form className="row">
+          <div className="select col-12 col-lg-2">
             <label htmlFor="number-persons"></label>
             <select 
               name="number-persons" 
@@ -64,11 +64,10 @@ const Reservation = () => {
               <option value="6">6 Personas</option>
             </select>
           </div>
-          <div>
+          <div className="col-12 col-lg-1">
             <p className="paragraph-reserve">PARA EL</p>
           </div>
-          <div>
-            <label htmlFor="date-reservation"></label>
+          <div className="col-12 col-lg-2">
             <input
               type="date" 
               name="date-reservation" 
@@ -77,10 +76,10 @@ const Reservation = () => {
               onChange={e => setDate(e.target.value)}
             />
           </div>
-          <div>
+          <div className="col-12 col-lg-1">
             <p className="paragraph-reserve">A LAS</p>
           </div>
-          <div className="select">
+          <div className="select col-12 col-lg-2">
             <label htmlFor="hour-reservation"></label>
             <select
               name="hour-reservation"
@@ -117,12 +116,12 @@ const Reservation = () => {
             </select>
           </div>
           <div
-            className="container-fullmenu" 
+            className="container-fullmenu col-12 col-lg-1" 
             type="button"
             onClick={handleReserve}
           >
             <div className="btn-fullmenu" to="/menu">
-              Reservar
+              Reserva
               <span className="arrow-fullmenu">
                 <FontAwesomeIcon icon={faChevronRight} />
               </span>    
