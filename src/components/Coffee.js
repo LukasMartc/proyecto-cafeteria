@@ -1,8 +1,6 @@
-import React from 'react'
-
 const Coffee = ({title, img}) => {
   return (
-    <div className='container-type'>
+    <div className='container-type col-md-3 col-12'>
       <div>
         <img src={img} alt="Cafe Expresso"/>
       </div>

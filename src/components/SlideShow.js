@@ -2,7 +2,6 @@ import { faChevronLeft } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronRight } from '@fortawesome/free-solid-svg-icons'
 import { useState } from 'react'
-import React from 'react'
 
 const SlideShow = ({images}) => {
     const [currentImage, setCurrentImage] = useState(0);
@@ -17,13 +16,14 @@ const SlideShow = ({images}) => {
     }
 
     return (
-        <div className='container-imgcoffe'>
+        <div className='col-md-6 col-12 container-imgcoffe'>
             <FontAwesomeIcon
-                className='next-image'
+                className='mx-3'
+                role="button"
                 icon={faChevronLeft} 
                 onClick={previusImage}
                 />
-            <figure className='container-slideshow'>
+            <figure className='container-slideshow my-4'>
                 {images.map((image, index) => {
                     return (
                         <div className={currentImage === index ? "slide active" : "slide"} >
@@ -35,7 +35,8 @@ const SlideShow = ({images}) => {
                 })}
             </figure>
             <FontAwesomeIcon
-                className='next-image' 
+                className='mx-3'
+                role="button" 
                 icon={faChevronRight} 
                 onClick={nextImage}
             />

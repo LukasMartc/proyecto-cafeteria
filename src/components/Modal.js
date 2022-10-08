@@ -3,9 +3,8 @@ import { useState } from 'react';
 import CerrarBtn from '../images/cerrar.svg'
 import { db } from '../config/firebase'
 import { collection, addDoc } from 'firebase/firestore' 
-import React from 'react'
 
-const Modal = ({setModal, animationModal, setAnimationModal, msj, setMsj, amount, setAmount, date, setDate, hour, setHour, client, setClient}) => {
+const Modal = ({setModal, animationModal, setAnimationModal, msj, setMsj, amount, setAmount, date, setDate, hour, setHour, client, setClient, toast}) => {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [phone, setPhone] = useState('');
@@ -20,7 +19,13 @@ const Modal = ({setModal, animationModal, setAnimationModal, msj, setMsj, amount
     }
 
     async function saveClientDB() {
-        await addDoc(collection(db, 'Clientes'), client);
+        try {
+            await addDoc(collection(db, 'Clientes'), client);
+            toast.success('Has reservado con exito')
+        } catch (error) {
+            toast.error('Tu reserva ha fallado')
+        }
+
     } 
 
     function handleSubmit(e) {

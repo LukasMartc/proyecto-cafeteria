@@ -5,7 +5,6 @@ import PictureCoffe2 from '../images/articulo-cafe2.jpg'
 import PictureCoffe3 from '../images/articulo-cafe3.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronRight } from '@fortawesome/free-solid-svg-icons'
-import React from 'react'
 
 const ArticleBlog = () => {
 const images = [PictureCoffe1, PictureCoffe2, PictureCoffe3];
@@ -13,12 +12,12 @@ const images = [PictureCoffe1, PictureCoffe2, PictureCoffe3];
   return (
     <article>
         <div className='article-blog'>
-            <div className='container-featured'>
-                <h3 className='featured-title'>DESTACADOS</h3>
+            <div className='d-flex justify-content-center'>
+                <h3 className='my-4 fs-1'>DESTACADOS</h3>
             </div>
-            <div className='content-featured'>
+            <div className='content-featured row'>
                 <SlideShow images={images}/>
-                <div className='description-featured'>
+                <div className='description-featured col-md-6 col-12'>
                     <p>
                         Si disfrutas el <strong>Café</strong>, no puedes dejar de probar nuestro <strong>Cappuccino</strong> o <strong>Expresso</strong>, asi como los mejores acompañamientos como Galletas o Queques especiales que tenemos para ti.
                     </p>

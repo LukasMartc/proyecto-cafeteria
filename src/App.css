@@ -1,25 +1,6 @@
-.container-navbar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-}
-
 .logo {
-    width: 173.75px;
-    height: 100px;
-}
-
-.navbar {
-    width: 370.63px;
-}
-
-.nav-link{
-    text-decoration: none;
-    margin: 0 30px;
-    font-size: 20px;
-    color: black;
-    font-weight: 500;
+    width: 175.75px;
+    height: 102px;
 }
 
 header {
@@ -30,15 +11,6 @@ header {
     display: flex;
 }
 
-.container-h1 {
-    margin-left: 100px;
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-    justify-content: center;
-    color: rgba(243, 241, 241, 0.87);
-}
-
 h1 {
     font-size: 60px;
     font-weight: 300;
@@ -47,38 +19,8 @@ h1 {
 .paragraph-header {
     font-size: 30px;
     margin-top: 0;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     font-weight: 300;
-}
-
-.container-shop {
-    background-color: black;
-    border-radius: 8px;
-    height: 51.6px;
-    width: 160.7px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.btn-shop {
-    margin: 2px 9px;
-    font-size: 19px;
-    text-decoration: none;
-    color: white;
-    display: flex;
-    width: 100%;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
-}
-
-.text-shop {
-    margin: 0;
-}
-
-.arrow-shop {
-    margin-left: 5px;
 }
 
 .article-blog {
@@ -92,19 +34,8 @@ h1 {
 }
 
 .container-slideshow {
-    margin: 16px 0;
     display: flex;
     justify-content: center;
-}
-
-.container-featured {
-    display: flex;
-    justify-content: center;
-    font-size: 35px;
-}
-
-.featured-title {
-    margin: 20px 0;
 }
 
 .content-featured {
@@ -115,6 +46,14 @@ h1 {
     width: 400px;
     height: 450px;
     border-radius: 50px;
+}
+
+@media(max-width: 1084px) {
+    .article-coffe1 {
+        width: 300px;
+        height: 350px;
+        border-radius: 50px;
+    }
 }
 
 .description-featured {
@@ -138,11 +77,6 @@ h1 {
     font-size: 9px;
     margin: 0 5px ;
     cursor: pointer;
-}
-
-.next-image {
-    cursor: pointer;
-    margin: 0 20px;
 }
 
 .slide {
@@ -178,7 +112,7 @@ h1 {
 .container-littlemenu {
     background-image: url(./images/bg-littlemenu.jpg);
     background-size: 100% 100%;
-    height: 120vh;
+    height: 110vh;
     background-position: 50% 50%;
 }
 
@@ -196,11 +130,6 @@ h1 {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-}
-
-.title-littlemenu {
-    font-size: 35px;
-    margin: 20px 0;
 }
 
 .paragraph-littlemenu {
@@ -236,12 +165,17 @@ h1 {
     margin: 20px;
 }
 
+@media (max-width:895px) {
+    .container-littlemenu {
+        height: 150vh;
+    }
+}
+
 .container-type {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 320.4px;
     margin: 15px 30px;
 }
 

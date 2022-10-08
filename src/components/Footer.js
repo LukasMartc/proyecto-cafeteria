@@ -8,7 +8,6 @@ import { faLocationDot } from "@fortawesome/free-solid-svg-icons"
 import { faPhone } from "@fortawesome/free-solid-svg-icons"
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons"
 import LogoCafeteria from "../images/logo.png"
-import React from 'react'
 
 const Footer = () => {
   return (

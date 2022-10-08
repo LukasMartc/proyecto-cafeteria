@@ -3,7 +3,7 @@ import Msj from "./Msj"
 import Modal from '../components/Modal'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons" 
-import React from 'react'
+import toast, { Toaster } from 'react-hot-toast';
 
 const Reservation = () => {
   const [amount, setAmount] = useState('');
@@ -40,6 +40,7 @@ const Reservation = () => {
 
   return (
     <article className="article-reserve">
+      <Toaster />
       <div className="container-reservation">
         <div className="description-reservation">
           <h3 className="title-reservation">RESERVA CON NOSTROS</h3>
@@ -146,6 +147,7 @@ const Reservation = () => {
           setHour={setHour}
           client={client}
           setClient={setClient}
+          toast={toast}
         />
       )}
 

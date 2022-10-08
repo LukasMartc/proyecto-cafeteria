@@ -5,17 +5,16 @@ import { faChevronRight } from "@fortawesome/free-solid-svg-icons"
 import Espresso from '../images/coffee-item1.png'
 import Capuchino from '../images/coffee-item2.png'
 import PourOver from '../images/coffee-item3.png'
-import React from 'react'
 
 const LittleMenu = () => {
   return (
     <article className="container-littlemenu">
       <div className="littlemenu">
         <div className="desciption-littlemenu">
-          <h3 className="title-littlemenu">NUESTRO MENÚ</h3>
+          <h3 className="my-3 fs-1">NUESTRO MENÚ</h3>
           <p className="paragraph-littlemenu">Café Recontre es un lugar agradable en donde podrá disfrutar el mejor Café.</p>
         </div>
-        <div className="types-coffee">
+        <div className="types-coffee row">
           <Coffee title="Expreso" img={Espresso}/>
           <Coffee title="Capuchino" img={Capuchino}/>
           <Coffee title="Pour Over" img={PourOver}/>
