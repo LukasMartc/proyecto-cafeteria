@@ -51,7 +51,6 @@ const Modal = ({setModal, animationModal, setAnimationModal, msj, setMsj, amount
 
         setClient({...client, objClient})
 
-        console.log(client)
         saveClientDB();
         
         closeModal();
