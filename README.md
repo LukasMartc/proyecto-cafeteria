@@ -1,8 +1,34 @@
-# Web Page de Cafetería con Create React App
+# Café Recontre
 
-Se realiza pagina web de una cafetería utilizando react, donde se implementan hooks, props, React Router , JavaScrip,
-css, react-bootstrap, entre otras librerias. Se reutilizan componentes como en el articulo menú, ademas
-se mapea un array de imagenes para utilizarlas como un slideshow, y por ultimo se realiza un sistema de reservas,
-en la que se llenan los campos y al apretar el boton de reserva, se abre una ventana modal, en la cual se registran los datos del cliente, 
-para finalmente registrar los datos del modal y los datos de "cantidad de personas", "fecha" y "hora" en una base de datos, en este caso
-se utilizo FirestoreCloud.
+Café Recontre is a web application inspired by a cafeteria, which has mobile adaptability, a main information section of the cafeteria, a blog that includes an article, a brief catalog of coffees, a reservations section where fill out a form for the table and time, and then a modal opens to enter customer data.
+
+## Getting Started 🚀
+
+### Content
+
+This project has two branches: master and deployment. master is configured to be run in local while host is prepared to be hosted on Netlify.
+
+### Demo
+
+You can see a demo of this project on the following link: [Café Recontre](https://superlative-nasturtium-841623.netlify.app/)
+
+### Installation 🔧
+
+If you want to run this project on your machine, just follow these steps:
+
+- Create a folder and execute `git clone https://github.com/LukasMartc/proyecto-cafeteria`.
+
+
+## Technology Stack 🛠️
+
+This project was built using the following technologies
+
+- [React](https://reactjs.org/) - JavaScript library for building user interfaces
+- [Bootstrap](https://getbootstrap.com/) - Frontend Framework
+- React-host-toast
+- [Firebase](https://firebase.google.com/) - Application Development Platform
+
+---
+
+Developed by [Lukas Martínez](https://github.com/LukasMartc)
+
