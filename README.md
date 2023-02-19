@@ -1,6 +1,6 @@
 # Café Recontre
 
-Café Recontre is a web application inspired by a cafeteria, which has mobile adaptability, a main information section of the cafeteria, a blog that includes an article, a brief catalog of coffees, a reservations section where fill out a form for the table and time, and then a modal opens to enter customer data.
+Café Recontre is a web application inspired by a coffe shop, which has mobile adaptability, a main information section of the cafeteria, a blog that includes an article, a brief catalog of coffees, a reservations section where fill out a form for the table and time, and then a modal opens to enter customer data.
 
 ## Getting Started 🚀
 
